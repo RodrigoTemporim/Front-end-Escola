@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';  
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'; 
+import { Link } from 'react-router-dom'; 
 
 const Header: React.FC = () => {
     return(
@@ -9,11 +10,11 @@ const Header: React.FC = () => {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="/alunos">Alunos</Nav.Link>          
+        <Nav.Link as = {Link} to="/alunos">Alunos</Nav.Link>          
         <NavDropdown title="Mais" id="collasible-nav-dropdown">
             <NavDropdown.Divider /> 
-          <NavDropdown.Item href="cadastro_aluno">Cadastro</NavDropdown.Item>
-          <NavDropdown.Item href="/loc">Localização</NavDropdown.Item>        
+          <NavDropdown.Item as = {Link} to="/cadastro_aluno">Cadastro</NavDropdown.Item>
+          <NavDropdown.Item as = {Link} to="/loc">Localização</NavDropdown.Item>        
           <NavDropdown.Divider />          
         </NavDropdown>        
       </Nav>     

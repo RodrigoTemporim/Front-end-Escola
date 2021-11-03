@@ -49,10 +49,10 @@ const Detail: React.FC = () => {
             <br />
 
             <Card style = {{ width: '18rem'}}></Card>
-                <Card.Body id='visu'>
+                <Card.Body>
                     <Card.Title>{aluno?.nm}</Card.Title>
 
-                    <Card.Text >
+                    <Card.Text id='visu'>
                         <strong>Ra: </strong>
                         {aluno?.ra}
                         <br/>

@@ -85,11 +85,11 @@ const Alunos: React.FC = () => {
                         {
                             alunos.map(aluno => (
                                 <tr key={aluno.id}>
-                                    <td>{aluno.id}.toUpperCase</td>
-                                    <td>{aluno.ra}.toUpperCase</td>
-                                    <td>{aluno.nm}.toUpperCase</td>
+                                    <td>{aluno.id}</td>
+                                    <td>{aluno.ra}</td>
+                                    <td>{aluno.nm}</td>
                                     <td>{moment(aluno?.birth).format('DD/MM/YYYY')}</td>
-                                    <td>{aluno.ads}.toUpperCase</td>
+                                    <td>{aluno.ads}</td>
                                     <td>{aluno.matriculado ? 'Sim' : 'Não'}</td>
                                     <td>{moment(aluno?.updated_at).format('DD/MM/YYYY')}</td>
                                     <td>

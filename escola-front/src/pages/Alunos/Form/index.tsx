@@ -72,7 +72,7 @@ const Alunos: React.FC = () => {
         <div className='container'>
             <br />
             <div className='aluno-header'>
-                <h1>Nova Tarefa</h1>
+                <h1 id='label'>Nova Tarefa</h1>
                 <Button variant='dark' size='sm' onClick={back}>Voltar</Button>
             </div>
             <br />
@@ -80,20 +80,20 @@ const Alunos: React.FC = () => {
             <div className='copntainer'>
                 <Form onSubmit={onSubmit}>
                     <Form.Group>
-                        <Form.Label>RA</Form.Label>
-                        <Form.Control type='text' name='ra' value={model.ra} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} required/>
+                        <Form.Label id ='label'>RA</Form.Label>
+                        <Form.Control  type='text' name='ra' value={model.ra} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} required/>
                     </Form.Group>
                     <Form.Group>
-                        <Form.Label>Nome</Form.Label>
-                        <Form.Control type='text' name='nm' value={model.nm} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} required/>
+                        <Form.Label  id ='label'>Nome</Form.Label >
+                        <Form.Control  type='text' name='nm' value={model.nm} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} required/>
                     </Form.Group>
                     <Form.Group>
-                        <Form.Label>Nascimento</Form.Label>
-                        <Form.Control type='date' name='birth' value={model.birth} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} required/>
+                        <Form.Label  id ='label'>Nascimento</Form.Label >
+                        <Form.Control  type='date' name='birth' value={model.birth} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} required/>
                     </Form.Group>
                     <Form.Group>
-                        <Form.Label>Endereço</Form.Label>
-                        <Form.Control type='text' name='ads' value={model.ads} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} required/>
+                        <Form.Label  id ='label'>Endereço</Form.Label >
+                        <Form.Control  type='text' name='ads' value={model.ads} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} required/>
                     </Form.Group>
                     <br/>
                     <Button variant='dark' type='submit'> Cadastrar </Button>

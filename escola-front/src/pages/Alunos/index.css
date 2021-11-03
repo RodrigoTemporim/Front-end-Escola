@@ -2,5 +2,11 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;    
+}
+
+body{
+    min-height: 95vh;
+    background-image: url(C:\Users\Rodrigo\Front-end-Escola\escola-front\src\imgs\video_image-cujBWwaTa.jpg);
+    background-repeat: no-repeat;
 }

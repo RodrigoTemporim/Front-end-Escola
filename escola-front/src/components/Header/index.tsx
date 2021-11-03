@@ -13,8 +13,7 @@ const Header: React.FC = () => {
         <NavDropdown title="Mais" id="collasible-nav-dropdown">
             <NavDropdown.Divider /> 
           <NavDropdown.Item href="cadastro_aluno">Cadastro</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Localização</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Quem somos</NavDropdown.Item>
+          <NavDropdown.Item href="/loc">Localização</NavDropdown.Item>        
           <NavDropdown.Divider />          
         </NavDropdown>        
       </Nav>     

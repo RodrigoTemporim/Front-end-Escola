@@ -1,0 +1,13 @@
+.center{   
+   position: absolute;
+   left: 45%;
+   bottom: 10%;
+   font-weight: bolder;
+}
+
+#mapa{
+    position: absolute;
+    left: 30%;
+    bottom: 20%;    
+    border: 10px solid black;
+}

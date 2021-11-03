@@ -35,6 +35,7 @@ const Alunos: React.FC = () => {
         setModel({
             ...model,
             [e.target.name]: e.target.value
+
         })
     }
 
@@ -44,12 +45,14 @@ const Alunos: React.FC = () => {
         
         if(id !== undefined){
             const response = await api.put(`/alunos/${id}`, model)
+            console.log(response)
         } else{
             const response = await api.post('alunos', model)
+            console.log(response)
         }
         back()
 
-        console.log(model)
+        
     }
 
     function back(){
